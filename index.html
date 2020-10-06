@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anne Sweet - начинающий блогер</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header container">
+    <div class="header_inner">
+      <a href="#" class="header_logo">
+        <img class="header_logo_img" src="/img/header/logo.svg" alt="logo_image">
+      </a>
+      <nav class="header_nav">
+        <a href="#article" class="header_nav_link">Статьи</a>
+        <a href="#about_me" class="header_nav_link">Обо мне</a>
+        <a href="#portfolio" class="header_nav_link">Портфолио</a>
+        <a href="#messange" class="header_nav_link">Написать мне</a>
+      </nav>
+    </div>    
+  </header>
+  <main>    
+    <!-- ===== Articles ===== -->
+
+    <section class="articles container">
+      <div class="article_header">
+        <a name="article"><h2 class="article_title title">Все статьи</h2></a>
+        <select class="article_choise" name="theme" id="theme">
+          <option class="article_choise_item" data-category="all">Все статьи</option>
+          <option class="article_choise_item" >Путешествия</option>
+          <option class="article_choise_item">Город</option>
+          <option class="article_choise_item">Книги</option>
+          <option class="article_choise_item">Фотографии</option>
+          <option class="article_choise_item">Рецепты</option>        
+        </select>
+      </div>
+     
+      <div class="article_inner">
+        <!-- === Article_1 === -->
+        <a href="article_01.html" class="article_link" target="_blank">
+          <div class="article_item  a_item_1 small">
+            <img src="/img/main/article_01.jpg" height="268" width="387">
+            <h4 class="article_item_title">Путешествие в&nbsp;Берлин в&nbsp;августе</h4>
+            <p class="article_item_description">Летний месяц я&nbsp;провела в&nbsp;столице Германии вместе с&nbsp;друзьями. И&nbsp;вот как это было!</p>
+            <div class="article_item_footer">
+              <p class="article_tag">Теги: <span class="article_tag_item" data-category="Путешествия">путешествия</span></p>
+                <time class="article_time" datetime="2020-09-29">29.09.2020</time>  
+            </div>            
+          </div>
+        </a>
+          <!-- === Article_2 === -->
+          <a href="article_01.html" class="article_link" target="_blank">
+            <div class="article_item  a_item_2 small">
+              <img src="/img/main/article_02.jpg" height="268" width="387">
+              <h4 class="article_item_title">Где выпить колдбрю в&nbsp;Москве</h4>
+              <p class="article_item_description">Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+              <div class="article_item_footer">
+                <p class="article_tag">Теги: <span class="article_tag_item"  data-category="Город">город</span></p>
+                  <time class="article_time" datetime="2020-07-24">24.07.2020</time>  
+              </div>            
+            </div>
+          </a>
+           <!-- === Article_3 === -->
+           <a href="article_01.html" class="article_link" target="_blank">
+            <div class="article_item  a_item_3 small">
+              <img src="/img/main/article_03.jpg" height="268" width="387">
+              <h4 class="article_item_title">Прочитано: книжные рекомендации</h4>
+              <p class="article_item_description">Рассказываю о&nbsp;прочитанных за&nbsp;последнее время книгах: фавориты и&nbsp;провалы.</p>
+              <div class="article_item_footer">
+                <p class="article_tag">Теги: <span class="article_tag_item" data-category="Книги">книги</span></p>
+                  <time class="article_time" datetime="2020-07-15">15.07.2020</time>  
+              </div>            
+            </div>
+          </a>
+          <!-- === Article_4 === -->
+          <a href="article_01.html" class="article_link" target="_blank">
+            <div class="article_item  a_item_4 large text_on_image">
+              <!-- <img src="/img/main/article_04.jpg" height="552" width="590"> -->
+              <h4 class="article_item_title white title_large">Снимки на&nbsp;плёнку</h4>
+              <p class="article_item_description white text_large">Поделилась с&nbsp;вами весенними фотографиями, и&nbsp;секретами удачных снимков.</p>
+              <div class="article_item_footer">
+                <p class="article_tag white">Теги: <span class="article_tag_item white" data-category="Фотографии">фотографии</span></p>
+                  <time class="article_time white" datetime="2020-06-29">29.06.2020</time>  
+              </div>            
+            </div>
+          </a>
+          <!-- === Article_5 === -->
+          <a href="article_01.html" class="article_link" target="_blank">
+            <div class="article_item  a_item_5 large text_on_image">
+              <!-- <img src="/img/main/article_04.jpg" height="552" width="590"> -->
+              <h4 class="article_item_title white title_large">Домашний чизкейк </h4>
+              <p class="article_item_description white text_large">Что может быть лучше чизкейка с&nbsp;сезонными ягодами? Только домашний чизкейк!</p>
+              <div class="article_item_footer">
+                <p class="article_tag white">Теги: <span class="article_tag_item white" data-category="Рецепты">рецепты</span></p>
+                  <time class="article_time white" datetime="2020-06-24">24.06.2020</time>  
+              </div>            
+            </div>
+          </a>
+      </div>
+      <button class= "article_btn">Показать еще</button>
+    </section>
+
+    <!-- ===== About_Me ===== -->
+
+    <section class="about_me container">
+      <a name="about_me"><h2 class="about_me_title title">Обо мне</h2></a>
+      <div class="about_me_inner">
+        <img src="/img/main/about_me.jpg" height="693" width="590">
+        <div class="about_me_info">
+          <p class="about_me_info_text">Всем привет! Меня зовут Аня, и&nbsp;это мой личный блог. <br> Здесь ты&nbsp;найдёшь рассказы о&nbsp;моих путешествиях, снимки на&nbsp;плёнку, рецепты, обзоры на&nbsp;книги. В&nbsp;общем, тексты о&nbsp;том, что мне инетресно.</p>
+          <p class="about_me_info_text">Я&nbsp;работаю копирайтером, поэтому мой блоге&nbsp;&mdash; это ещё и&nbsp;моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
+          <p class="about_me_info_text">Если вы&nbsp;хотите написать мне&nbsp;&mdash; это можно сделать в&nbsp;соцсетях или через <a href="#messange" class="about_me_link">форму</a>. Всегда приятно услышать обратную связь от&nbsp;читателей и&nbsp;познакомиться поближе.</p>
+          <p class="about_me_info_text">Приятного чтения!</p>
+          <blockquote class="about_me_info_idea">Я&nbsp;верю, что каждый раз пробуя новое, выходящее за&nbsp;зону моего комфорта, я&nbsp;действительно узнаю настояющую себя.</blockquote>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== Portfolio ===== -->
+
+    <section class="portfolio container">
+      <a name="portfolio"><h2 class="portfolio_title title">Портфолио</h2></a>
+        <div class="portfolio_card">
+          <a href="#" class="portfolio_card_a" target="_blanc">
+            <div class="portfolio_card_item item_1">
+              <h3 class="portfolio_card_item_title">Блог HTML Academy</h3>
+              <h4 class="portfolio_card_item_subtitle">&laquo;Как учиться продуктивно&raquo;</h4>
+              <p class="portfolio_card_item_text">Про основные методы обучения, которые помогут быстро и&nbsp;надолго запомнить информацию.</p>
+            </div>
+          </a>
+
+          <a href="#" class="portfolio_card_a" target="_blanc">
+            <div class="portfolio_card_item item_2">
+              <h3 class="portfolio_card_item_title white">Журнал &laquo;LNK&raquo;</h3>
+              <h4 class="portfolio_card_item_subtitle white">&laquo;Зачем поцели нужны человеку? И&nbsp;какие они бывают&raquo;</h4>
+              <p class="portfolio_card_item_text white">Поцелуи&nbsp;&mdash; повсеместная ежедневная практика. Но&nbsp;зачем люди целуются? Какие смысли вкладывают в&nbsp;этот ритуал? И&nbsp;где корни этой практики?</p>
+            </div>
+          </a>
+
+          <a href="#" class="portfolio_card_a" target="_blanc">
+            <div class="portfolio_card_item item_3">
+              <h3 class="portfolio_card_item_title">Журнал &laquo;Т&nbsp;&mdash; Л&raquo;</h3>
+              <h4 class="portfolio_card_item_subtitle">&laquo;Советы по&nbsp;эффективной удалённой работе&raquo;</h4>
+              <p class="portfolio_card_item_text">Поделилась лайфхаками, которые помогают мне работать продуктивно из&nbsp;дома.</p>
+            </div>
+          </a>
+        </div>
+      <button class="portfolio_btn">Показать еще</button>
+    </section>
+
+    <!-- ===== Messanges ===== -->
+
+    <section class="messanges container">
+      <a name="messange"><h2 class="messange_title title">Написать мне</h2></a>
+      <form action="#" method="post" class="messange_form" >
+        <div class="form_info">
+          <label class="form_text">
+            <p class="form_text_p">Ваше имя</p>
+            <input class="form_text_input_name" type="text" placeholder="Иван Иванов"  pattern="[A-Za-zА-Яа-яЁё]">
+          </label>
+          <label class="form_mail">
+            <p class="form_mail_p">Email</p>
+            <input class="form_text_input_email" type="email" placeholder="google@gmail.com" required pattern="\w{3,}@\w{3}.[a-zA-Z]{2}">
+          </label>
+        </div>  
+        <p class="form_messange">Сообщение</p>
+        <textarea class="messange_text" pattern="[A-Za-zА-Яа-яЁё]{5,200}">Напишите здeсь ваше сообщение.</textarea>
+        <button class="btn_messange">Отправить</button>
+      </form>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <a href="#" class="footer_link">ВК</a>
+    <a href="#" class="footer_link">Телеграм</a>
+    <a href="#" class="footer_link">Инстаграм</a>
+    <a href="#" class="footer_link">Твиттер</a>
+  </footer>
+
+  <script src="/script/main.js"></script>
+</body>
+</html>
