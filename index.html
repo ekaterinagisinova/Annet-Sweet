@@ -158,16 +158,19 @@
       <form action="#" method="post" class="messange_form" >
         <div class="form_info">
           <label class="form_text">
+            <span class="error_name">Имя должно содержать только буквы</span>
             <p class="form_text_p">Ваше имя</p>
-            <input class="form_text_input_name" type="text" placeholder="Иван Иванов"  pattern="[A-Za-zА-Яа-яЁё]">
+            <input class="form_text_input_name" type="text" placeholder="Иван Иванов" required >
           </label>
           <label class="form_mail">
+            <span class="error_email">Некорректный электронный адрес</span>
             <p class="form_mail_p">Email</p>
-            <input class="form_text_input_email" type="email" placeholder="google@gmail.com" required pattern="\w{3,}@\w{3}.[a-zA-Z]{2}">
+            <input class="form_text_input_email" type="email" placeholder="google@gmail.com" required >
           </label>
         </div>  
         <p class="form_messange">Сообщение</p>
-        <textarea class="messange_text" pattern="[A-Za-zА-Яа-яЁё]{5,200}">Напишите здeсь ваше сообщение.</textarea>
+        <textarea class="messange_text" >Напишите здeсь ваше сообщение.</textarea>
+        <span class="error_messange">Длина сообщения должна быть не менее 5 и не более 200 символов</span>
         <button class="btn_messange">Отправить</button>
       </form>
     </section>

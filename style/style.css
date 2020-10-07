@@ -456,6 +456,7 @@ main{
   background-position: center;
   border-radius: 10px;
   box-sizing: border-box;
+  position: relative;
 }
 .form_info{
   display: flex;
@@ -525,6 +526,56 @@ input[type="text"], input[type="email"]{
     height: 293px;
     resize: none;
 }
+
+/*  Подписи к неверно заполненным полям формы */
+.form_text,  .form_mail{
+  position: relative;
+}
+
+.error_name{  
+  position: absolute;
+  display: none;
+  top: 92px;
+  right: 0px;
+  padding: 10px;
+  color: red;
+  font-family: Spectral SC, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.error_email{
+  position: absolute;
+  display: none;
+  top: 92px;
+  right: 12px;
+  padding: 10px;
+  color: red;
+  font-family: Spectral SC, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.error_messange{
+  position: absolute;
+  display: none;
+  bottom: 96px;
+  right: 127px;
+  padding: 10px;
+  color: red;
+  font-family: Spectral SC, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+
 
 /* ===== Footer ===== */
 .footer{
